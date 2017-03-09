@@ -1,6 +1,6 @@
 # Stitch Fix Algorithms Tour
 
-See it here: [algorithms-tour.stitchfix.com](https://algorithms-tour.stitchfix.com)
+See it here: [algorithms-tour.stitchfix.com](http://algorithms-tour.stitchfix.com)
 
 Made by: Eric Colson, Brian Coffey, Tarek Rached and Liz Cruz
 
