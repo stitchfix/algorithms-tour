@@ -449,17 +449,29 @@ h3 {
   }
 }
 
-a.nav-tweet-the-tour-sm {
+li.nav-tweet-the-tour-sm, a.nav-tweet-the-tour-sm {
   display: none;
 }
 
-@media only screen and (max-width : 850px) {
+@media only screen and (max-width : 737px) {
 
-  a.nav-tweet-the-tour-sm {
+  li.nav-tweet-the-tour-sm, a.nav-tweet-the-tour-sm {
+    display: none;
+  }
+
+  li.nav-tweet-the-tour, a.nav-tweet-the-tour {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width : 738px) and (max-width : 850px) {
+
+  li.nav-tweet-the-tour-sm, a.nav-tweet-the-tour-sm {
     display: block;
   }
 
-  a.nav-tweet-the-tour {
+  li.nav-tweet-the-tour, a.nav-tweet-the-tour {
     display: none;
   }
 

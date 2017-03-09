@@ -412,7 +412,7 @@ li.nav-tour, a.nav-tour {
 @media only screen and (max-width : 737px) {
 
   li.nav-tour, a.nav-tour {
-    display: block;
+    display: none;
   }
 
   li.nav-algorithms-tour, a.nav-algorithms-tour {
