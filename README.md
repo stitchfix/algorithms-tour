@@ -35,6 +35,8 @@ These "activate" and "progress" functions reference other functions found in fil
 
 It is in the `js/stories/` folder that you will find most of the code that looks like more typical D3 usage. If / when we get time, we'll return to some of our favorite animations therein and produce cleaner and better documented versions of them.
 
+Note: Jim Vallandingham has recently updated his [scrollytelling code](https://github.com/vlandham/scroll_demo) to use D3 version 4 - we used his earlier version in building this tour, but we have used his updated code in our illustrative repo [here](https://github.com/stitchfix/hello-scrollytelling).
+
 
 ## Have Fun!
 
