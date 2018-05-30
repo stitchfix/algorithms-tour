@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  build:
+    working_directory: /home/circleci/stitchfix/algorithims-tour
+    docker:
+      - image: alpine:latest
+    environment:
+      CIRCLE_ARTIFACTS: public/
+    steps:
+      - checkout
+      - run:
+          name: make public dir
+          command: mkdir public/
+      - run:
+          name: copy assets
+          command: cp -rf * public/
+      - store_artifacts:
+          path: public/
+
+notify:
+ webhooks:
+   - url: https://fixops-service.stitchfix.com/webhooks/circleci
