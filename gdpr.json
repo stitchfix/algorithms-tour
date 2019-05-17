@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "2-0-2",
+  "gdpr": {
+    "$description": "This document holds instructions  related to GDPR-compliance and your application.  You are expected to keep this up to date as you work on your app.  See https://github.com/stitchfix/eng-wiki/blob/master/architecture-decisions/0010-we-explicitly-track-personal-data-managed-per-application.md for more details.",
+    "erasure": {
+      "$description": "This section holds instructions for deleting or obfuscating personal data in the event a client asks for their personal data to be deleted, per the GDPR.",
+      "Name": {
+        "Transmetropolitan": [
+        ],
+        "Private Postgres": [
+        ],
+        "Elasticsearch": null,
+        "Cache Redis": null,
+        "memcached": null,
+        "s3": null,
+        "Third Parties": {}
+      },
+      "Email": {
+        "Transmetropolitan": [],
+        "Private Postgres": [],
+        "Elasticsearch": null,
+        "Cache Redis": null,
+        "memcached": null,
+        "s3": null,
+        "Third Parties": {}
+      },
+      "Postal Address": {
+        "Transmetropolitan": [],
+        "Private Postgres": [],
+        "Elasticsearch": null,
+        "Cache Redis": null,
+        "memcached": null,
+        "s3": null,
+        "Third Parties": {}
+      },
+      "IP address of logged in user": null,
+      "Device ID of logged in user": null,
+      "Date of birth": {
+        "Transmetropolitan": [],
+        "Private Postgres": [],
+        "Elasticsearch": null,
+        "Cache Redis": null,
+        "memcached": null,
+        "s3": null,
+        "Third Parties": {}
+      },
+      "Photo": {
+        "Transmetropolitan": [],
+        "Private Postgres": [],
+        "Elasticsearch": null,
+        "Cache Redis": null,
+        "memcached": null,
+        "s3": null,
+        "Third Parties": {}
+      },
+      "Measurements": {
+        "Transmetropolitan": [],
+        "Private Postgres": [],
+        "Elasticsearch": null,
+        "Cache Redis": null,
+        "memcached": null,
+        "s3": null,
+        "Third Parties": {}
+      },
+      "All other Style Profile Responses": {
+        "Transmetropolitan": [],
+        "Private Postgres": [],
+        "Elasticsearch": null,
+        "Cache Redis": null,
+        "memcached": null,
+        "s3": null,
+        "Third Parties": {}
+      },
+      "Free text that could contain personal data": {
+        "Transmetropolitan": [],
+        "Private Postgres": [],
+        "Elasticsearch": null,
+        "Cache Redis": null,
+        "memcached": null,
+        "s3": null,
+        "Third Parties": {}
+      },
+      "Payment Card Information": null,
+      "Employee Data": null,
+      "Client ID": {
+        "Third Parties": {}
+      }
+    }
+  }
+}
