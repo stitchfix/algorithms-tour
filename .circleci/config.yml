@@ -1,0 +1,34 @@
+version: 2.1
+
+jobs:
+  build:
+    working_directory: /home/circleci/stitchfix/algorithms-tour
+    docker:
+      - image: cimg/ruby:3.1
+        auth:
+          username: $DOCKERHUB_USERNAME
+          password: $DOCKERHUB_PASSWORD
+    environment:
+      CIRCLE_ARTIFACTS: public/
+    parallelism: 1
+    steps:
+      - checkout
+      - run:
+          name: Make tarball
+          command: tar -C public/ -czvf assets.tar.gz .
+      - store_artifacts:
+          path: assets.tar.gz
+      - store_artifacts:
+          path: public/
+      - stitchfix_build/notify_ci_completed
+
+orbs:
+  stitchfix_build: stitchfix/build@dev:master
+
+workflows:
+  version: 2
+  on-commit:
+    jobs:
+      - build:
+          context: org-global
+
