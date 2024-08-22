@@ -15,7 +15,7 @@
   top: 0px;
   z-index: 0;
   height: calc(100vh);
-  background: #f7f5f2;
+  background: #F2F3F4;
 }
 
 #intro-credits {
@@ -136,7 +136,7 @@ p {
 
 #sf-footer-block-background {
   position:relative;
-  background:#ede7e3;
+  background:#fafafa;
 }
 
 #footer {
