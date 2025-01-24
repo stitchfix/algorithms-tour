@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -ex
-DRY_RUN="--dryrun"
+#DRY_RUN="--dryrun"
 
 SUBDIR=""
 
