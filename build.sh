@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -ex
-#DRY_RUN="--dryrun"
+DRY_RUN="--dryrun"
 
 SUBDIR=""
 
@@ -12,7 +12,9 @@ else
   TARGET="s3://fo-stitchfix-algorithms-tour-production"
 fi
 
-for DIR in css img js svg; do
+cd public
+
+for DIR in css img js; do
   aws s3 cp --recursive \
     $DRY_RUN \
     --cache-control max-age=31104000 \
