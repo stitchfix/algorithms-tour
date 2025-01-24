@@ -3,11 +3,8 @@
 set -ex
 #DRY_RUN="--dryrun"
 
-SUBDIR=""
-
 if [ "$CODEBUILD_WEBHOOK_TRIGGER" != "branch/main" ]; then
-  SUBDIR="__$CODEBUILD_WEBHOOK_TRIGGER"
-  TARGET="s3://fo-stitchfix-algorithms-tour-production/$SUBDIR"
+  TARGET="s3://fo-stitchfix-algorithms-tour-production/__$CODEBUILD_WEBHOOK_TRIGGER"
 else
   TARGET="s3://fo-stitchfix-algorithms-tour-production"
 fi
